@@ -1,0 +1,169 @@
+.aboutSection {
+  padding: 60px 40px;
+  background: #f9f9fb;
+  font-family: sans-serif;
+}
+
+.sectionSubtitle {
+  color: #d13fef;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+.skillBoxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skillBox {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  min-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3);
+  text-align: center;
+  justify-items: center;
+}
+
+/* .circle {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  /* border: 5px solid #a74bfa; */
+  /* font-size: 20px;
+  font-weight: bold;
+  color: #a74bfa;
+  margin: 0 auto 10px;
+} */ 
+ .circleWrapper {
+  width: 120px;
+  height: 120px;
+  /* align-items: center;
+   */
+   /* justify-content: center; */
+   justify-items: center;
+}
+ .circle :global(.CircularProgressbar-text) {
+  width: 100%;
+  height:100%;
+  dominant-baseline: middle; /* vertical centering */
+  text-anchor: middle;       /* horizontal centering */
+}
+
+.skillName {
+  font-size: 16px;
+  color: #999;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.levels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+}
+
+.bars {
+  margin-top: 40px;
+}
+
+.barContainer {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: flex;
+  /* font-weight: bold;
+  color: #999;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px; */
+  gap: 50px;
+}
+.skillName{
+  font-weight: bold;
+  color: #999;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+.skillValue {
+  padding-left: 20px;
+  font-weight: bold;
+  color: #999;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+.bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #a74bfa;
+  border-radius: 20px;
+}
+
+.testimonialsSection {
+  margin-top: 70px;
+}
+
+.testimonialCards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  justify-items: center;
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 13px;
+  color: #777;
+}
+
+.quote {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #a74bfa;
+  opacity: 0.2;
+}
