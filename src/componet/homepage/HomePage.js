@@ -27,7 +27,7 @@ import project from '../../../public/project.jpg';
 import ui from '../../../public/ui.jpg';
 
 config.autoAddCss = false;
-function HomePage() {
+function HomePage({ scrollToSection }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -35,10 +35,10 @@ function HomePage() {
     };
     // for cv code 
     const handleClick = () => {
-    // Open the PDF in a new tab
-    window.open('/Pravin_s_lokhande_cv.pdf', '_blank'); // new tab
-    // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
-  };
+        // Open the PDF in a new tab
+        window.open('/Pravin_s_lokhande_cv.pdf', '_blank'); // new tab
+        // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
+    };
     return (
         <div className={styles.pageContainer}>
             {/* Navigation */}
@@ -66,10 +66,14 @@ function HomePage() {
 
                     {isOpen && (
                         <div className={styles.humberView}>
-                            <a href="/home" className={styles.navLinkHumberger}>Home</a>
-                            <Link href="/services" className={styles.navLinkHumberger}>Services</Link>
-                            <a href="#" className={styles.navLinkHumberger}>Works</a>
-                            <a href="#" className={styles.navLinkHumberger}>About</a>
+                            <button onClick={() => scrollToSection('Home')} className={styles.navLinkHumberger}>Home</button>
+                            <button onClick={() => scrollToSection('Services')} className={styles.navLinkHumberger}>Services</button>
+                            <button onClick={() => scrollToSection('ContactUs')} className={styles.navLinkHumberger}>Contact Us</button>
+                            <button onClick={() => scrollToSection('About')} className={styles.navLinkHumberger}>About</button>
+                            {/* <Link href="/Home" className={styles.navLinkHumberger}>Home</Link>
+                            <Link href="/Services" className={styles.navLinkHumberger}>Services</Link>
+                            <Link href="/ContactUs" className={styles.navLinkHumberger}>Contact Us</Link>
+                            <Link href="/About" className={styles.navLinkHumberger}>About</Link> */}
                         </div>
                     )}
                     {/* <div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
@@ -78,10 +82,14 @@ function HomePage() {
                     <span className={styles.line}></span>
                 </div> */}
                     <div className={styles.navRight}>
-                        <div className={styles.navItem}>Home</div>
-                        <div className={styles.navItem}>Service</div>
-                        <div className={styles.navItem}>Works</div>
-                        <div className={styles.navItem}>About</div>
+                        <button onClick={() => scrollToSection('Home')} className={styles.navItem}>Home</button>
+                        <button onClick={() => scrollToSection('Services')} className={styles.navItem}>Service</button>
+                        <button onClick={() => scrollToSection('ContactUs')} className={styles.navItem}>Contact Us</button>
+                        <button onClick={() => scrollToSection('About')} className={styles.navItem}>About</button>
+                        {/* <Link href="/Home" className={styles.navItem}>Home</Link>
+                        <Link href="/Services" className={styles.navItem}>Service</Link>
+                        <Link href="/ContactUs" className={styles.navItem}>Works</Link>
+                        <Link href="/About" className={styles.navItem}>About</Link> */}
                     </div>
                 </div>
             </div>
@@ -92,17 +100,17 @@ function HomePage() {
                     <div className={styles.heroLeft}>
                         <h5 className={styles.h5tag}>HEY THERE!</h5>
                         <div className={styles.line}></div>
-                        <h3 className={styles.h3tag}>I'm Mr. Pravin Lokhande</h3>
+                        <h3 className={styles.h3tag}>I&apos;m Mr. Pravin Lokhande</h3>
                         <div className={styles.roleTitle}>Java Full Stack Developer & UI/UX Designer</div>
                         <p className={styles.ptag}>
-                            I&rsquo;m a graduate with a Bachelor&rsquo;s degree in Computer Science,
-                            completed in 2024. I&rsquo;m certified in Java Full Stack
-                            Development and have gained 3 months of hands-on experience as a
+                            I&apos;m a graduate with a Bachelor&apos;s degree in Computer Science,
+                            completed in 2024. I&apos;m certified in Java Full Stack
+                            Development and have gained 3 months of hands&#45;on experience as a
                             Java Full Stack trainee at Disha IT Training and Placement Institute in Pune.
-                            Currently, I&rsquo;m working with Vibhuprada Services Private
+                            Currently, I&apos;m working with Vibhuprada Services Private
                             Limited in Kharadi, Pune. I specialize in developing efficient,
-                            scalable applications, and I&rsquo;m passionate about creating innovative
-                            solutions to solve real-world challenges.
+                            scalable applications, and I&apos;m passionate about creating innovative
+                            solutions to solve real&#45;world challenges.
                         </p>
 
                         <button className={styles.firstButoon}>See My Work</button>
@@ -158,7 +166,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     <div className={styles.certLogo}>
@@ -168,7 +176,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     <div className={styles.certLogo}>
@@ -178,7 +186,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     <div className={styles.certLogo}>
@@ -188,7 +196,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     <div className={styles.certLogo}>
@@ -198,7 +206,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     <div className={styles.certLogo}>
@@ -208,7 +216,7 @@ function HomePage() {
                             alt="Logo"
                             width={60}
                             height={50}
-                            // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                         />
                     </div>
                     {/* <div className={styles.certLogo}>
@@ -228,18 +236,18 @@ function HomePage() {
                     <div className={styles.serviceCard}>
                         <div className={styles.serviceIcon}>
                             <Image
-                            src={web}
-                            alt="Logo"
-                            width={60}
-                            height={50}
+                                src={web}
+                                alt="Logo"
+                                width={60}
+                                height={50}
                             // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-                        />
+                            />
                         </div>
                         <h3 className={styles.serviceTitle}>Web Development</h3>
                         <p className={styles.serviceDescription}>
-                            Full-Stack Development From Start to Finish Are A
-                            Must Top Tier Frontend Development Allowing
-                            You Front-Line User Frontend Straight Web Code.
+                            Full&#45;stack development from start to finish is a must,
+                            with top&#45;tier frontend development allowing
+                            your front&#45;line users a smooth web experience.
                         </p>
                         <a href="#" className={styles.serviceLink}>Learn More</a>
                     </div>
@@ -248,16 +256,16 @@ function HomePage() {
                         <div className={styles.serviceIcon}>
                             {/* <i className="fas fa-paint-brush"></i> */}
                             <Image
-                            src={ui}
-                            alt="Logo"
-                            width={60}
-                            height={50}
+                                src={ui}
+                                alt="Logo"
+                                width={60}
+                                height={50}
                             // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-                        />
+                            />
                         </div>
                         <h3 className={styles.serviceTitle}>UX/UI Designer</h3>
                         <p className={styles.serviceDescription}>
-                            Full-Stack For Brought Top Start to Finish Are A
+                            Full&#45;Stack For Brought Top Start to Finish Are A
                             Must Top Front-End Frontend Development Usting
                             Wim Allow. Your Front Line User Are Best Rub Dix.
                         </p>
@@ -268,18 +276,18 @@ function HomePage() {
                         <div className={styles.serviceIcon}>
                             {/* <i className="fas fa-shopping-cart"></i> */}
                             <Image
-                            src={project}
-                            alt="Logo"
-                            width={60}
-                            height={50}
+                                src={project}
+                                alt="Logo"
+                                width={60}
+                                height={50}
                             // style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-                        />
+                            />
                         </div>
                         <h3 className={styles.serviceTitle}>Ecommerce</h3>
                         <p className={styles.serviceDescription}>
-                            Full-Stack For Brought Top Start to Finish Are A
+                            Full&#45;Stack For Brought Top Start to Finish Are A
                             Must Top Front Frontend Development Coming
-                            Then Art & Soe For Brought Tab Gerals.
+                            Then Art &amp; Soe For Brought Tab Gerals.
                         </p>
                         <a href="#" className={styles.serviceLink}>Learn More</a>
                     </div>
