@@ -6,7 +6,7 @@ export default function FooterPage() {
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
-        <Image src="/PravinLogo_5.png" alt="Ataraxis Logo" className={styles.logo} />
+        <Image src="/PravinLogo_5.png" alt="Ataraxis Logo" className={styles.logo} width={100} height={100} />
         <p>Driving innovation with intelligent tools to enhance decision&#45;making and shape the future of technology..</p>
         <div className={styles.socialIcons}>🔗🖱️ 💾 ⌨️ 📱 📡 💻 🌐</div>
         <button className={styles.backToTop}>⬆ BACK TO TOP</button>

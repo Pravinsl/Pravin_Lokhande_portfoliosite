@@ -34,7 +34,7 @@ function HomePage({ scrollToSection }) {
         setIsOpen(!isOpen);
     };
     // for cv code 
-    const handleClick = () => {
+    const handleClick_CV = () => {
         // Open the PDF in a new tab
         window.open('/Pravin_s_lokhande_cv.pdf', '_blank'); // new tab
         // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
@@ -114,7 +114,7 @@ function HomePage({ scrollToSection }) {
                         </p>
 
                         <button className={styles.firstButoon}>See My Work</button>
-                        <button className={styles.secondeButton} onClick={handleClick}>Get CV</button>
+                        <button className={styles.secondeButton} onClick={handleClick_CV}>Get CV</button>
 
                         <div className={styles.socialIcons}>
                             <FaFacebookF className={styles.icon} />
