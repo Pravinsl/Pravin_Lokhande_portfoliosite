@@ -177,7 +177,8 @@ function HomePage({ scrollToSection }) {
           <div className={styles.imageContainer}>
             {/* <div className={styles.purpleShape}> */}
             <Image
-              src="/Pravin.png"
+              src={myImage}
+              // src="/Pravin.png"
               alt="My Image"
               width={600}
               height={550}
