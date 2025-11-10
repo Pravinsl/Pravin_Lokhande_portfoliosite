@@ -282,11 +282,10 @@ body {
     align-items: center;
     padding: 0 60px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
-    
-     /* background-image: url('/bg9.jpg');
+     /* background-image: url('/bg.jpg'); */
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat; */
+        background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -413,7 +412,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.myImage{
+    margin-bottom: -140px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 .purpleShape {
     position: relative;
     width: 500px;
@@ -447,12 +450,12 @@ body {
     display: flex;
     align-items: center;
     padding: 0 60px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
-    
-     /* background-image: url('/bg9.jpg');
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%); */
+    background: red;
+     background-image: url('/bg2.jpg');
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat; */
+        background-repeat: no-repeat;
     overflow: hidden;
 }
 

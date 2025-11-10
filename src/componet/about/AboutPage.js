@@ -2,13 +2,17 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import styles from './AboutPage.module.css';
 import Image from 'next/image';
-
+import Ankush from '../../../public/ankush_rathod.png';
+import Rohan from '../../../public/PravinLogo_5.png';
+import Tanshri from '../../../public/PravinLogo_5.png';
 export default function AboutPage() {
   const skills = [
     { name: "HTML", value: 95, color: "#3b82f6" },
-    { name: "PHP", value: 90, color: "#ec4899" },
-    { name: "CSS", value: 91, color: "#10b981" },
+    { name: "Java", value: 80, color: "#ec4899" },
+    { name: "mySql", value: 91, color: "#10b981" },//css
     { name: "JavaScript", value: 65, color: "#f97316" },
+    // { name: "Next.js", value: 91, color: "#f207f6ff" },
+    // { name: "node.js", value: 40, color: "#b98310ff" },
   ];
 
   return (
@@ -40,10 +44,15 @@ export default function AboutPage() {
         <div className={styles.bars}>
           {[
             { name: 'HTML 5', value: 95 },
-            { name: 'PHP', value: 90 },
+            { name: 'java', value: 80 },
             { name: 'My SQL', value: 87 },
             { name: 'CSS 3', value: 91 },
             { name: 'Java Script', value: 65 },
+            { name: 'Next.js', value: 80 },
+            { name: 'React.js', value: 50 },
+            { name: 'Node.js', value: 75 },
+            { name: 'springBoot', value: 80 },
+            { name: 'API integration', value: 65 },
           ].map((skill) => (
             <div key={skill.name} className={styles.barContainer}>
               <span className={styles.label}>
@@ -72,17 +81,20 @@ export default function AboutPage() {
             {
               name: 'Mr Rohan Bhandopia',
               title: 'Cybersecurity Analyst',
-              img: '/user1.png',
+              img: Rohan,
+              discription: 'Pravin’s innovative mindset and strong problem-solving skills make him stand out. His dedication towards secure and efficient solutions reflects in every project he takes on',
             },
             {
               name: 'Mr Ankush Rathod',
               title: 'Java Developer',
-              img: '/ankush_rathod.png',
+              img: Ankush,
+              discription: 'Pravin’s attention to detail and commitment to quality is exceptional. His work reflects precision, reliability, and a passion for delivering the best user experience.',
             },
             {
               name: 'Tanshri Wanjari',
               title: 'Software Tester',
-              img: '/user3.png',
+              img: Tanshri,
+              discription: 'Working with Pravin has been an inspiring experience. His deep technical knowledge, combined with creativity, ensures the development of robust and scalable applications.'
             },
           ].map((user) => (
             <div className={styles.card} key={user.name}>
@@ -96,8 +108,7 @@ export default function AboutPage() {
               <h4 style={{color:'#0f034f55', fontSize:'900'}}>{user.name}</h4>
               <p className={styles.title}>{user.title}</p>
               <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                sollicitudin malesuada nisi, a varius sem.
+                {user.discription}
               </p>
               <span className={styles.quote}>❝</span>
             </div>

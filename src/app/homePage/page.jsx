@@ -44,9 +44,9 @@ export default function Page() {
         <div>
             <HomePage scrollToSection={scrollToSection} />
 
-            <div ref={homeRef}>
+            {/* <div ref={homeRef}>
                 <h1>Home Section</h1>
-            </div>
+            </div> */}
 
             <div ref={aboutRef}>
                 <AboutPage />
