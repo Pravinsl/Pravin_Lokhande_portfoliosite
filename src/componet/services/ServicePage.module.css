@@ -1,7 +1,8 @@
 /* WebDevServices.module.css - Mobile Responsive Version */
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #c4c5c6 0%, #a1a3a7 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,7 +334,7 @@
 @media (max-width: 480px) {
   .container {
     padding: 10px 5px;
-    min-height: 100vh;
+    min-height: 0vh;
   }
 
   .servicesWrapper {
