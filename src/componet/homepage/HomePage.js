@@ -44,15 +44,11 @@ function HomePage({ scrollToSection }) {
     setIsOpen(!isOpen);
   };
   // for cv code
-  // const handleClick_CV = () => {
-  //   // Open the PDF in a new tab
-  //   window.open("/Pravin_s_lokhande_cv.pdf"); // new tab
-  //   // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
-  // };
   const handleClick_CV = () => {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  window.open(`${basePath}/Pravin_s_lokhande_cv.pdf`, "_blank");
-};
+    // Open the PDF in a new tab
+    window.open("/Pravin_s_lokhande_cv.pdf", "_blank"); // new tab
+    // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
+  };
   return (
     <div className={styles.pageContainer}>
       {/* Navigation */}
