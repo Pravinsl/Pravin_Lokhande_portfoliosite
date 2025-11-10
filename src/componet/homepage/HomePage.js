@@ -44,11 +44,18 @@ function HomePage({ scrollToSection }) {
     setIsOpen(!isOpen);
   };
   // for cv code
+  // const handleClick_CV = () => {
+  //   // Open the PDF in a new tab
+  //   // window.open("/Pravin_s_lokhande_cv.pdf", "_blank"); // new tab
+  //   window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
+  // };
   const handleClick_CV = () => {
-    // Open the PDF in a new tab
-    // window.open("/Pravin_s_lokhande_cv.pdf", "_blank"); // new tab
-    window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
-  };
+  const link = document.createElement("a");
+  link.href = "/Pravin_Lokhande_portfoliosite/Pravin_s_lokhande_cv.pdf"; // path in GitHub Pages
+  link.download = "Pravin_S_Lokhande_CV.pdf"; // the filename for the downloaded file
+  link.click();
+};
+
   return (
     <div className={styles.pageContainer}>
       {/* Navigation */}
