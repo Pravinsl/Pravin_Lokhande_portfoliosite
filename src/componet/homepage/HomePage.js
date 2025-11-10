@@ -32,7 +32,7 @@ import image5 from "../../../public/Great_Learning_Logo1.png";
 import image6 from "../../../public/skolar.png";
 import myImage from "../../../public/Pravin.png";
 import web from "../../../public/web.jpg";
-import ui3 from "../../../public/ui3.jpg";
+import resume from "../../../public/ui3.jpg";
 import project from "../../../public/project.jpg";
 import ui from "../../../public/ui.jpg";
 
@@ -46,8 +46,8 @@ function HomePage({ scrollToSection }) {
   // for cv code
   const handleClick_CV = () => {
     // Open the PDF in a new tab
-    window.open("/Pravin_s_lokhande_cv.pdf", "_blank"); // new tab
-    // window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
+    // window.open("/Pravin_s_lokhande_cv.pdf", "_blank"); // new tab
+    window.location.href = '/Pravin_s_lokhande_cv.pdf'; // same tab
   };
   return (
     <div className={styles.pageContainer}>
