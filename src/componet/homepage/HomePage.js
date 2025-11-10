@@ -30,9 +30,7 @@ import image3 from "../../../public/udemy-logo1.png";
 import image4 from "../../../public/alison-logo1.png";
 import image5 from "../../../public/Great_Learning_Logo1.png";
 import image6 from "../../../public/skolar.png";
-import Pravin from "../../../public/pravin3.png";
-import pravin2 from '../../../public/pravin2.png'
-//
+import myImage from "../../../public/Pravin.png";
 import web from "../../../public/web.jpg";
 import ui3 from "../../../public/ui3.jpg";
 import project from "../../../public/project.jpg";
@@ -179,11 +177,12 @@ function HomePage({ scrollToSection }) {
           <div className={styles.imageContainer}>
             {/* <div className={styles.purpleShape}> */}
               <Image
-                src="/Pravin.png"
+                src={myImage}
                 alt="myImage"
                 width={600}
                 height={550}
                 className={styles.myImage}
+                priority
                 // remove fill
               />
             {/* </div> */}

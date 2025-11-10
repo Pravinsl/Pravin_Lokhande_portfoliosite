@@ -1,7 +1,7 @@
 // pages/contact.js
 import styles from './contact.module.css';
 import Image from 'next/image';
-
+import Email from "../../../public/Email.png"
 export default function ContactPage() {
   return (
     <div className={styles.wrapper}>
@@ -55,7 +55,7 @@ export default function ContactPage() {
             </form>
           </div> */}
           <Image
-            src="/Email.png"
+            src={Email}
             alt="contact illustration"
             width={260}
             height={270}
